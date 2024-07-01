@@ -3,8 +3,8 @@ import styles from './ProductModal.module.scss';
 import { useState, useEffect } from 'react';
 import Button from '../Button/Button';
 
-import plus from '../../../public/assets/img/plus-icon.png';
-import minus from '../../../public/assets/img/minus-icon.png';
+import plus from '../../assets/img/plus-icon.png';
+import minus from '../../assets/img/minus-icon.png';
 
 interface ProductModalProps {
     open: boolean,
@@ -76,28 +76,3 @@ const ProductModal: React.FC<ProductModalProps> = ({ open, close, name, short, p
 }
 
 export default ProductModal;
-
-
-
-// import React from 'react';
-// import './ProductModal.module.scss';
-
-// interface ProductModalProps {
-//     product: any;
-//     onClose: () => void;
-// }
-
-// const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
-//     return (
-//         <div className="modal-overlay" onClick={onClose}>
-//             <div className="modal-content" onClick={e => e.stopPropagation()}>
-//                 <button className="close-button" onClick={onClose}>X</button>
-//                 <h2>{product.name}</h2>
-//                 <p>{product.description}</p>
-//                 {/* Adicionar mais detalhes conforme necessário */}
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default ProductModal;
