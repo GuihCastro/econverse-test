@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+
+.container {
+    @include flex-center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 192rem;
+    padding: 3.4rem 9rem 6.1rem; 
+    gap: 5rem;
+}
